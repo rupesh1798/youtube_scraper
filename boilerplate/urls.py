@@ -15,4 +15,11 @@ Including another URLconf
 '''
 from django.urls import include, path, re_path
 
-urlpatterns = []
+urlpatterns = [
+    path('youtube/', include('videos.urls')),
+]
+
+handler400 = 'commons.views.http_bad_request_view'
+handler403 = 'commons.views.http_forbidden_view'
+handler404 = 'commons.views.http_not_found_view'
+handler500 = 'commons.views.http_server_error_view'

@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 from boilerplate import PROJECT_BASE_DIR
-
+from celery.schedules import crontab
 from pymodm import connect
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -30,7 +30,9 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
-INSTALLED_APPS = []
+INSTALLED_APPS = [
+    'videos'
+]
 
 MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
@@ -90,3 +92,39 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+REDIS_URL = (
+    f"redis://{os.environ.get('REDIS_HOST')}"
+    f":{os.environ.get('REDIS_PORT', '6379')}"
+    f"/{str(os.environ.get('REDIS_DBNAME', 14))}"
+)
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": REDIS_URL,
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "CONNECTION_POOL_KWARGS": {"max_connections": 100, "retry_on_timeout": True},
+            "SOCKET_CONNECT_TIMEOUT": 3
+        },
+        "KEY_PREFIX": "innote",
+        "KEY_FUNCTION": "commons.utils.redis_manager.make_cache_key"
+    }
+}
+
+CELERY_ENABLE_UTC = True
+CELERY_TIMEZONE = os.environ.get('TIMEZONE', 'UTC')
+CELERY_RESULT_BACKEND = REDIS_URL
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_CACHE_BACKEND = 'default'
+
+CELERY_BEAT_SCHEDULE = {
+    'fetch_videos': {
+        'task': 'videos.tasks.fetch_videos',
+        'schedule': crontab(minute=os.environ.get(
+            'VIDEO_MINUTES', 10))
+    }
+}

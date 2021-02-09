@@ -1,0 +1,32 @@
+version: '3'
+services:
+  youtube_search:
+    container_name: "youtube_search"
+    image: 'youtube_search:latest'
+    build:
+      context: .
+      dockerfile: dockerfile
+    entrypoint: /bin/ash -c "/app/start.sh"
+    ports:
+      - "21500:8011"
+    links:
+      - db
+      - celery_worker
+    volumes:
+      - ./boilerplate-logs:/var/log/boilerplate/
+    depends_on:
+      - db
+      - celery_worker
+    logging:
+      driver: "json-file"
+  db:
+    image: mongo:3.6
+    logging:
+      driver: "none"
+  celery_worker:
+    container_name: "celery_worker"
+    image: 'celery'
+    entrypoint: /bin/ash -c "/app/start.sh celery"
+    volumes:
+      - ./celery-logs:/var/log/celery/
+

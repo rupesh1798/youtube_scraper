@@ -1,0 +1,852 @@
+PID: 93040> 2021-02-08 19:24:57,166 - error - ERROR - 730edc75-77cc-4f6e-8ac2-ace7d7bde7f4 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 24, in fetch_videos
+    youtube = build(api_service_name, api_version, developerKey=api_key)
+NameError: name 'api_key' is not defined
+
+
+---------------------------------------------------------
+PID: 93079> 2021-02-08 19:25:34,623 - error - ERROR - 20fc6325-d45c-4d3d-b0f2-f57fbdfc8c5b :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 24, in fetch_videos
+    youtube = build(api_service_name, api_version, developerKey=api_key)
+NameError: name 'api_key' is not defined
+
+
+---------------------------------------------------------
+PID: 93171> 2021-02-08 19:26:23,664 - error - ERROR - f1ffe48f-0f10-44b9-a790-3723fc619bd4 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 34, in manage_videos
+    'data': videos
+NameError: name 'videos' is not defined
+
+
+---------------------------------------------------------
+PID: 94273> 2021-02-08 19:41:27,135 - error - ERROR - 94fcea09-83f1-4d39-a713-7315e223f6db :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 38, in fetch_videos
+    Video.models.remove({})
+AttributeError: type object 'Video' has no attribute 'models'
+
+
+---------------------------------------------------------
+PID: 94298> 2021-02-08 19:41:47,724 - error - ERROR - ff2d0dcb-bbb6-455b-8003-c8176eee8fac :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 39, in fetch_videos
+    video_details = sorted(response.get("items", []), key=lambda obj: obj.get('publishedAt', '0', reverse=True))
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 39, in <lambda>
+    video_details = sorted(response.get("items", []), key=lambda obj: obj.get('publishedAt', '0', reverse=True))
+TypeError: get() takes no keyword arguments
+
+
+---------------------------------------------------------
+PID: 94372> 2021-02-08 19:42:29,527 - error - ERROR - 9a7ab4ae-964e-412d-8fd5-3022032b08fe :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 39, in fetch_videos
+    video_details = sorted(response["items"], key=lambda obj: obj.get('publishedAt', '0', reverse=True))
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 39, in <lambda>
+    video_details = sorted(response["items"], key=lambda obj: obj.get('publishedAt', '0', reverse=True))
+TypeError: get() takes no keyword arguments
+
+
+---------------------------------------------------------
+PID: 94414> 2021-02-08 19:42:50,422 - error - ERROR - 9e2cac4c-5c56-4ad9-9501-6f300612fa26 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 34, in manage_videos
+    'data': videos
+NameError: name 'videos' is not defined
+
+
+---------------------------------------------------------
+PID: 94433> 2021-02-08 19:42:59,433 - error - ERROR - c0983157-8906-451f-9705-b599d288c092 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 34, in manage_videos
+    'data': videos
+NameError: name 'videos' is not defined
+
+
+---------------------------------------------------------
+PID: 94682> 2021-02-08 19:45:26,707 - error - ERROR - 13aa0c2d-430a-4e2d-b398-eae64d663eb5 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 34, in manage_videos
+    'data': videos
+NameError: name 'videos' is not defined
+
+
+---------------------------------------------------------
+PID: 96370> 2021-02-08 19:59:34,057 - error - ERROR - 716e23a7-99b5-4075-973d-1a040d8d9e23 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 36, in fetch_videos
+    createdOn = fields.DateTimeField(required=False, default=lambda: datetime.now())
+NameError: name 'fields' is not defined
+
+
+---------------------------------------------------------
+PID: 96483> 2021-02-08 20:09:19,967 - error - ERROR - f7d69750-1274-4249-ac42-ea01a061c2fb :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 48, in fetch_videos
+    } for video in response["items"]]
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 48, in <listcomp>
+    } for video in response["items"]]
+AttributeError: 'NoneType' object has no attribute 'get'
+
+
+---------------------------------------------------------
+PID: 96692> 2021-02-08 20:11:43,998 - error - ERROR - 77990cfb-ca1f-4d24-bf32-c6bce8e345c0 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 50, in fetch_videos
+    } for video in response["items"]]
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 50, in <listcomp>
+    } for video in response["items"]]
+AttributeError: 'NoneType' object has no attribute 'get'
+
+
+---------------------------------------------------------
+PID: 96715> 2021-02-08 20:12:07,392 - error - ERROR - e88e03ee-439f-4f75-b93f-f3ba9f509e98 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 16, in manage_videos
+    fetch_videos()
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 51, in fetch_videos
+    } for video in response["items"]]
+  File "/Users/I0909/assignment/youtube_scraper/videos/tasks.py", line 51, in <listcomp>
+    } for video in response["items"]]
+AttributeError: 'NoneType' object has no attribute 'get'
+
+
+---------------------------------------------------------
+PID: 96876> 2021-02-08 20:13:23,412 - error - ERROR - 9838f378-237e-4f9c-b26e-b1b75ecfef03 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 34, in manage_videos
+    'data': videos
+NameError: name 'videos' is not defined
+
+
+---------------------------------------------------------
+PID: 97337> 2021-02-08 20:17:58,392 - error - ERROR - 4ef5b826-0a08-4bdb-82cb-0e047720bd25 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 28, in manage_videos
+    pagination_url = create_pagination_url(url=path_info, limit=limit, query_params={'reference_id': reference_id})
+NameError: name 'limit' is not defined
+
+
+---------------------------------------------------------
+PID: 97414> 2021-02-08 20:19:16,551 - error - ERROR - ba782d9e-e696-4909-9d29-ba1bfaea5109 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 46, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97414> 2021-02-08 20:19:20,770 - error - ERROR - 4e79a903-43ca-469c-ad61-a60a9ff2e806 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 46, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97503> 2021-02-08 20:20:31,763 - error - ERROR - afbf6a69-e581-44d8-b53f-cbae33283826 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 41, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97503> 2021-02-08 20:20:33,234 - error - ERROR - c39d0bca-dbc7-439f-8763-5338747da179 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 41, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97592> 2021-02-08 20:21:51,644 - error - ERROR - 631a84c2-b35b-4e70-b56c-6b5a16b06da0 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 36, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97592> 2021-02-08 20:22:03,488 - error - ERROR - b907a640-0c9a-4197-8156-bffa58417ab5 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 36, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97654> 2021-02-08 20:22:48,525 - error - ERROR - 9ed041d1-39e3-4948-bd33-b97c50dc46ab :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 36, in fetch_videos
+    return list(self.model.objects.aggregate(*pipeline)) or []
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/manager.py", line 71, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymodm/queryset.py", line 178, in aggregate
+    before_pipeline + list(pipeline), **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2458, in aggregate
+    **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/collection.py", line 2377, in _aggregate
+    retryable=not cmd._performs_write)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/aggregation.py", line 148, in get_cursor
+    user_fields=self._user_fields)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/pool.py", line 694, in command
+    exhaust_allowed=exhaust_allowed)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/network.py", line 161, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: the limit must be specified as a number, full error: {'ok': 0.0, 'errmsg': 'the limit must be specified as a number', 'code': 15957, 'codeName': 'Location15957'}
+
+
+---------------------------------------------------------
+PID: 97881> 2021-02-08 20:27:30,523 - error - ERROR - 1fddf604-5edc-4317-829c-c8a3fb072b16 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 17, in fetch_videos
+    print(reference_id)
+NameError: name 'reference_id' is not defined
+
+
+---------------------------------------------------------
+PID: 98186> 2021-02-08 20:29:57,363 - error - ERROR - ccf1f526-e82f-4adb-97e6-2328b2548296 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 22, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 40, in fetch_videos
+    print(list(self.model.objects.get_all(query)))
+  File "/Users/I0909/assignment/youtube_scraper/commons/utils/default_model_manager.py", line 44, in get_all
+    return list(resources.values())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/cursor.py", line 1207, in next
+    if len(self.__data) or self._refresh():
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/cursor.py", line 1124, in _refresh
+    self.__send_message(q)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/cursor.py", line 1001, in __send_message
+    address=self.__address)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1372, in _run_operation_with_response
+    exhaust=exhaust)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1471, in _retryable_read
+    return func(session, server, sock_info, slave_ok)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1366, in _cmd
+    unpack_res)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/server.py", line 135, in run_operation_with_response
+    _check_command_response(first, sock_info.max_wire_version)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/pymongo/helpers.py", line 164, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: $and must be an array, full error: {'ok': 0.0, 'errmsg': '$and must be an array', 'code': 2, 'codeName': 'BadValue'}
+
+
+---------------------------------------------------------
+PID: 99107> 2021-02-08 20:48:15,700 - error - ERROR - dbca7ce7-7fc0-4d46-b65b-e4d66e094f17 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 23, in manage_videos
+    video_list = Video.objects.fetch_videos(reference_id, limit)
+  File "/Users/I0909/assignment/youtube_scraper/videos/managers.py", line 35, in fetch_videos
+    self.model.objects.find({'$text': {'$search': "java shop -coffee"}})
+AttributeError: 'VideoManager' object has no attribute 'find'
+
+
+---------------------------------------------------------
+PID: 332> 2021-02-08 20:58:11,082 - error - ERROR - 396efb69-e50f-4c0d-a8fc-9e8a59da5930 :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 44, in manage_videos_search
+    request_data = request._json_body
+AttributeError: 'WSGIRequest' object has no attribute '_json_body'
+
+
+---------------------------------------------------------
+PID: 373> 2021-02-08 20:59:16,591 - error - ERROR - ba10117e-59f1-4511-abff-38e395f95a7f :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 45, in manage_videos_search
+    request_data = request._json_body
+AttributeError: 'WSGIRequest' object has no attribute '_json_body'
+
+
+---------------------------------------------------------
+PID: 413> 2021-02-08 20:59:33,636 - error - ERROR - 6b780a18-5beb-4d04-811d-5027c552ae9a :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 47, in manage_videos_search
+    request_data = request._json_body
+AttributeError: 'WSGIRequest' object has no attribute '_json_body'
+
+
+---------------------------------------------------------
+PID: 573> 2021-02-08 21:02:40,365 - error - ERROR - c12232d9-22cf-4fa7-976a-70435d728b2f :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 56, in manage_videos_search
+    video_list = Video.objects.search_videos(query)
+TypeError: search_videos() takes 1 positional argument but 2 were given
+
+
+---------------------------------------------------------
+PID: 604> 2021-02-08 21:03:05,119 - error - ERROR - bc620ce4-02a4-4ea1-b8cb-ce060d1c499c :: 
+Traceback (most recent call last):
+  File "/Users/I0909/assignment/youtube_scraper/boilerplate/middlewares/handle_exception.py", line 37, in __call__
+    response = self.get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/venv/lib/python3.6/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/I0909/assignment/youtube_scraper/videos/views.py", line 57, in manage_videos_search
+    video_list = Video.objects.search_videos(query)
+TypeError: search_videos() takes 1 positional argument but 2 were given
+
+
+---------------------------------------------------------
