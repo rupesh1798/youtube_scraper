@@ -34,8 +34,19 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ python manage.py runserver
 ```
-
 run celery in another terminal tab
+```sh
+$ celery --app boilerplate.celery.app worker -B -l info -c 2
+```
+
+Run with docker
+
+```sh
+$ cd youtube_scraper
+$ docker-compose build
+$ docker-compose up
+```
+
 ### 1. API1 to fetch videos
 API 1 = `http://127.0.0.1:8000/youtube/videos`
 
